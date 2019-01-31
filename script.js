@@ -1,4 +1,4 @@
-let hash = location.search.substr(1);
+let hash = location.hash.substr(1);
 
 const REGEXP = /^(\/?(\d+)(,m(?:uted)?)?(,(-)?(?:(\d+d)?(\d+h)?(\d+m)?(\d+s)?(\d+ms)?))?)+;(\d)x(\d)$/i;
 const REGEXP_VOD = /^(\d+)(,m(?:uted)?)?(?:,(-)?(?:(\d+d)?(\d+h)?(\d+m)?(\d+s)?(\d+ms)?))?$/i;
