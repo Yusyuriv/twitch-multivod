@@ -10,6 +10,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background: #000;
 }
 .row {
   display: flex;
@@ -31,10 +32,9 @@ body {
   right: 0;
   bottom: 0;
   z-index: 10;
-  transition: opacity 300ms linear, background-color 10s ease-in;
+  transition: opacity 300ms linear;
   display: flex;
   align-items: center;
-  background-color: #000;
 }
 .invisible {
   display: none;

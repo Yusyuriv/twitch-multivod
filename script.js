@@ -189,5 +189,3 @@ function hideUI() {
 document.documentElement.addEventListener('mousemove', delayUIDisappearance);
 document.documentElement.addEventListener('click', delayUIDisappearance);
 document.documentElement.addEventListener('keydown', delayUIDisappearance);
-
-overlay.style.backgroundColor = 'transparent';
