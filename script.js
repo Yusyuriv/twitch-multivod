@@ -29,7 +29,7 @@ let vods = hash
       if (v[pos + 3])
         start += parseInt(v[pos + 3]);
       if (v[pos + 4])
-        start += parseFloat('0.' + v[pos[4]]);
+        start += parseFloat('0.' + v[pos + 4].padStart(3, '0'));
       if(v[pos-1])
         start = -start;
 
