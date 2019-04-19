@@ -48,6 +48,7 @@ const confirmVideos = document.querySelector('#confirm-videos');
 const mainUI = document.querySelector('#main-ui');
 const resyncButton = document.querySelector('#resync-videos');
 const pausePlayButton = document.querySelector('#pause-play');
+const unhideOverlayButton = document.querySelector('#unhide-overlay-btn');
 
 let videosConfirmed;
 
@@ -150,6 +151,16 @@ document.body.addEventListener('keyup', e => {
     else
       playAll();
   }
+});
+document
+  .querySelector('#hide-overlay-btn')
+  .addEventListener('click', e => {
+    overlay.classList.add('invisible');
+    unhideOverlayButton.classList.remove('invisible');
+  });
+unhideOverlayButton.addEventListener('click', e => {
+  overlay.classList.remove('invisible');
+  unhideOverlayButton.classList.add('invisible');
 });
 
 quality.addEventListener('change', setQuality);
