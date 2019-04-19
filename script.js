@@ -191,10 +191,10 @@ function delayUIDisappearance() {
   overlay.style.opacity = '1';
   if(uiTimeout)
     clearTimeout(uiTimeout);
-  uiTimeout = setTimeout(hideUI, 3000);
+  uiTimeout = setTimeout(hideUI, 1000);
 }
 function hideUI() {
-  overlay.style.opacity = '0.001';
+  overlay.style.opacity = '0';
 }
 
 document.documentElement.addEventListener('mousemove', delayUIDisappearance);
